@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drconnorrobertson.github.io/the-prospecting-show/sitemap.xml
