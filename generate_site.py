@@ -59,6 +59,7 @@ EPISODES = [
 # ─────────────────────────────────────────────
 # SPOTIFY SHOW ID FOR EMBEDS
 # ─────────────────────────────────────────────
+BASE_PATH = "/the-prospecting-show"  # GitHub Pages subdirectory
 SPOTIFY_SHOW_ID = "4VDPOlbe2RSSqukaSuYniX"
 SPOTIFY_SHOW_URL = f"https://open.spotify.com/show/{SPOTIFY_SHOW_ID}"
 APPLE_PODCASTS_URL = "https://podcasts.apple.com/us/podcast/the-prospecting-show/id1488353384"
@@ -699,11 +700,11 @@ def nav_html(active=''):
 
     return f"""<nav class="nav">
     <div class="nav-inner">
-        <a href="/" class="nav-brand">
+        <a href="{BASE_PATH}/" class="nav-brand">
             <span>The Prospecting Show</span>
         </a>
         <ul class="nav-links">{nav_items}</ul>
-        <a href="/subscribe/" class="nav-cta">Subscribe</a>
+        <a href="{BASE_PATH}/subscribe/" class="nav-cta">Subscribe</a>
         <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
     </div>
 </nav>"""
@@ -714,16 +715,16 @@ def footer_html():
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="/" class="nav-brand"><span>The Prospecting Show</span></a>
+                <a href="{BASE_PATH}/" class="nav-brand"><span>The Prospecting Show</span></a>
                 <p>Every week, Dr. Connor Robertson interviews entrepreneurs and business owners about how they built, scaled, and grew their businesses.</p>
             </div>
             <div class="footer-col">
                 <h4>Show</h4>
                 <ul>
-                    <li><a href="/episodes/">All Episodes</a></li>
-                    <li><a href="/guests/">Guests</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="{BASE_PATH}/episodes/">All Episodes</a></li>
+                    <li><a href="{BASE_PATH}/guests/">Guests</a></li>
+                    <li><a href="{BASE_PATH}/about/">About</a></li>
+                    <li><a href="{BASE_PATH}/blog/">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -740,7 +741,7 @@ def footer_html():
                     <li><a href="{HOST_SITE}" target="_blank" rel="noopener">Dr. Connor Robertson</a></li>
                     <li><a href="{ELIXIR_CONSULTING}" target="_blank" rel="noopener">Elixir Consulting Group</a></li>
                     <li><a href="{PITTSBURGH_WIRE}" target="_blank" rel="noopener">The Pittsburgh Wire</a></li>
-                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="{BASE_PATH}/contact/">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -780,7 +781,7 @@ def head_html(title, description, path='/', og_type='website', schema=''):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{BASE_PATH}/css/style.css">
     {schema}
 </head>"""
 
@@ -791,7 +792,7 @@ def page_wrap(title, description, body, active='', path='/', og_type='website', 
 {nav_html(active)}
 {body}
 {footer_html()}
-<script src="/js/main.js"></script>
+<script src="{BASE_PATH}/js/main.js"></script>
 </body>
 </html>"""
 
@@ -811,13 +812,13 @@ def generate_homepage():
         episode_cards += f"""
         <div class="episode-card" data-topics="{','.join(ep['topics'])}">
             <span class="episode-num">Episode {ep['num']}</span>
-            <h3><a href="/episodes/{ep_slug}/">{ep['title']}</a></h3>
+            <h3><a href="{BASE_PATH}/episodes/{ep_slug}/">{ep['title']}</a></h3>
             <div class="episode-meta"><span>{ep['date']}</span><span>{ep['duration']}</span></div>
             <p class="episode-desc">{desc}</p>
             <div class="episode-topics">{topics_html}</div>
             <div class="episode-actions">
                 <a href="{SPOTIFY_SHOW_URL}" target="_blank" rel="noopener" class="listen-btn">Listen on Spotify</a>
-                <a href="/episodes/{ep_slug}/" class="details-btn">Details</a>
+                <a href="{BASE_PATH}/episodes/{ep_slug}/" class="details-btn">Details</a>
             </div>
         </div>"""
 
@@ -831,7 +832,7 @@ def generate_homepage():
             <div class="guest-avatar">{initials}</div>
             <h3>{ep['guest']}</h3>
             <p class="company">{ep['guest_company']}</p>
-            <a href="/episodes/{slug(ep['title'])}/" class="ep-link">Episode {ep['num']}</a>
+            <a href="{BASE_PATH}/episodes/{slug(ep['title'])}/" class="ep-link">Episode {ep['num']}</a>
         </div>"""
 
     # Blog cards
@@ -841,9 +842,9 @@ def generate_homepage():
         <div class="blog-card">
             <div class="blog-card-body">
                 <span class="category">{post['category']}</span>
-                <h3><a href="/blog/{post['slug']}/">{post['title']}</a></h3>
+                <h3><a href="{BASE_PATH}/blog/{post['slug']}/">{post['title']}</a></h3>
                 <p>{post['excerpt']}</p>
-                <a href="/blog/{post['slug']}/" class="read-more">Read Article &rarr;</a>
+                <a href="{BASE_PATH}/blog/{post['slug']}/" class="read-more">Read Article &rarr;</a>
             </div>
         </div>"""
 
@@ -876,7 +877,7 @@ def generate_homepage():
                     <a href="{SPOTIFY_SHOW_URL}" target="_blank" rel="noopener" class="btn-primary">
                         &#9654; Listen on Spotify
                     </a>
-                    <a href="/episodes/" class="btn-secondary">Browse Episodes</a>
+                    <a href="{BASE_PATH}/episodes/" class="btn-secondary">Browse Episodes</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat"><div class="stat-num">178+</div><div class="stat-label">Episodes</div></div>
@@ -897,7 +898,7 @@ def generate_homepage():
         <p class="section-subtitle">Catch up on the newest conversations with top entrepreneurs and business leaders.</p>
         <div class="episodes-grid">{episode_cards}</div>
         <div style="text-align:center; margin-top:40px;">
-            <a href="/episodes/" class="btn-primary">View All Episodes &rarr;</a>
+            <a href="{BASE_PATH}/episodes/" class="btn-primary">View All Episodes &rarr;</a>
         </div>
     </div>
 </section>
@@ -908,7 +909,7 @@ def generate_homepage():
         <p class="section-subtitle">Learn from entrepreneurs who are building real businesses across every industry.</p>
         <div class="guests-grid">{guest_cards}</div>
         <div style="text-align:center; margin-top:40px;">
-            <a href="/guests/" class="btn-secondary">View All Guests &rarr;</a>
+            <a href="{BASE_PATH}/guests/" class="btn-secondary">View All Guests &rarr;</a>
         </div>
     </div>
 </section>
@@ -919,7 +920,7 @@ def generate_homepage():
         <p class="section-subtitle">Insights on prospecting, sales, and business growth from The Prospecting Show.</p>
         <div class="blog-grid">{blog_cards}</div>
         <div style="text-align:center; margin-top:40px;">
-            <a href="/blog/" class="btn-secondary">Read More &rarr;</a>
+            <a href="{BASE_PATH}/blog/" class="btn-secondary">Read More &rarr;</a>
         </div>
     </div>
 </section>
@@ -959,13 +960,13 @@ def generate_episodes_page():
         cards += f"""
         <div class="episode-card" data-topics="{','.join(ep['topics'])}">
             <span class="episode-num">Episode {ep['num']}</span>
-            <h3><a href="/episodes/{ep_slug}/">{ep['title']}</a></h3>
+            <h3><a href="{BASE_PATH}/episodes/{ep_slug}/">{ep['title']}</a></h3>
             <div class="episode-meta"><span>{ep['date']}</span><span>{ep['duration']}</span></div>
             <p class="episode-desc">{desc}</p>
             <div class="episode-topics">{topics_html}</div>
             <div class="episode-actions">
                 <a href="{SPOTIFY_SHOW_URL}" target="_blank" rel="noopener" class="listen-btn">Listen on Spotify</a>
-                <a href="/episodes/{ep_slug}/" class="details-btn">Details</a>
+                <a href="{BASE_PATH}/episodes/{ep_slug}/" class="details-btn">Details</a>
             </div>
         </div>"""
 
@@ -1018,7 +1019,7 @@ def generate_episode_detail(ep):
         related_html += f"""
         <div class="episode-card">
             <span class="episode-num">Episode {r['num']}</span>
-            <h3><a href="/episodes/{r_slug}/">{r['title']}</a></h3>
+            <h3><a href="{BASE_PATH}/episodes/{r_slug}/">{r['title']}</a></h3>
             <div class="episode-meta"><span>{r['date']}</span></div>
         </div>"""
 
@@ -1054,7 +1055,7 @@ def generate_episode_detail(ep):
     body = f"""
 <section class="episode-detail">
     <div class="container">
-        <a href="/episodes/" class="back-link">&larr; Back to All Episodes</a>
+        <a href="{BASE_PATH}/episodes/" class="back-link">&larr; Back to All Episodes</a>
         <span class="episode-num" style="display:block; margin-bottom:12px;">Episode {ep['num']}</span>
         <h1>{ep['title']}</h1>
         <div class="meta-bar">
@@ -1202,7 +1203,7 @@ def generate_guests_page():
             <h3>{ep['guest']}</h3>
             {company}
             {link}
-            <a href="/episodes/{ep_slug}/" class="ep-link">Episode {ep['num']}</a>
+            <a href="{BASE_PATH}/episodes/{ep_slug}/" class="ep-link">Episode {ep['num']}</a>
         </div>"""
 
     body = f"""
@@ -1253,7 +1254,7 @@ def generate_subscribe_page():
         <div style="text-align:center; margin-top:60px; padding:40px; background:var(--bg-card); border-radius:16px; border:1px solid var(--border);">
             <h2 style="margin-bottom:12px;">Want to Be a Guest?</h2>
             <p style="color:var(--text-secondary); margin-bottom:20px; max-width:500px; margin-left:auto; margin-right:auto;">If you are an entrepreneur or business owner with a story to share, we would love to hear from you.</p>
-            <a href="/contact/" class="btn-primary">Apply to Be a Guest &rarr;</a>
+            <a href="{BASE_PATH}/contact/" class="btn-primary">Apply to Be a Guest &rarr;</a>
         </div>
     </div>
 </section>"""
@@ -1273,11 +1274,11 @@ def generate_blog_index():
         <div class="blog-card">
             <div class="blog-card-body">
                 <span class="category">{post['category']}</span>
-                <h3><a href="/blog/{post['slug']}/">{post['title']}</a></h3>
+                <h3><a href="{BASE_PATH}/blog/{post['slug']}/">{post['title']}</a></h3>
                 <p>{post['excerpt']}</p>
                 <div style="display:flex; justify-content:space-between; align-items:center;">
                     <span style="font-size:0.8rem; color:var(--text-muted);">{post['date']} &middot; {post['read_time']}</span>
-                    <a href="/blog/{post['slug']}/" class="read-more">Read &rarr;</a>
+                    <a href="{BASE_PATH}/blog/{post['slug']}/" class="read-more">Read &rarr;</a>
                 </div>
             </div>
         </div>"""
@@ -1306,7 +1307,7 @@ def generate_blog_detail(post):
         ep = next((e for e in EPISODES if e['num'] == ep_num), None)
         if ep:
             ep_slug = slug(ep['title'])
-            related_links += f'<li><a href="/episodes/{ep_slug}/">Episode {ep["num"]}: {ep["title"]}</a></li>'
+            related_links += f'<li><a href="{BASE_PATH}/episodes/{ep_slug}/">Episode {ep["num"]}: {ep["title"]}</a></li>'
 
     schema = f"""<script type="application/ld+json">
 {{
@@ -1331,7 +1332,7 @@ def generate_blog_detail(post):
 <section class="blog-detail">
     <div class="container">
         <article>
-            <a href="/blog/" class="back-link">&larr; Back to Blog</a>
+            <a href="{BASE_PATH}/blog/" class="back-link">&larr; Back to Blog</a>
             <span class="category" style="display:block; font-size:0.75rem; font-weight:700; color:var(--accent-light); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">{post['category']}</span>
             <h1>{post['title']}</h1>
             <div class="meta">By <a href="{HOST_SITE}" target="_blank" rel="noopener">Dr. Connor Robertson</a> &middot; {post['date']} &middot; {post['read_time']}</div>
@@ -1473,7 +1474,7 @@ def generate_404():
         <h1 style="font-size:6rem; font-weight:800; background:var(--gradient-1); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">404</h1>
         <h2 style="margin-bottom:16px;">Page Not Found</h2>
         <p style="color:var(--text-secondary); margin-bottom:32px;">The page you are looking for does not exist or has been moved.</p>
-        <a href="/" class="btn-primary">Back to Home</a>
+        <a href="{BASE_PATH}/" class="btn-primary">Back to Home</a>
     </div>
 </section>"""
     return page_wrap("Page Not Found | The Prospecting Show", "The page you are looking for does not exist.", body)
