@@ -59,10 +59,10 @@ EPISODES = [
 # ─────────────────────────────────────────────
 # SPOTIFY SHOW ID FOR EMBEDS
 # ─────────────────────────────────────────────
-BASE_PATH = "/the-prospecting-show"  # GitHub Pages subdirectory
+BASE_PATH = ""  # Vercel serves from root
 SPOTIFY_SHOW_ID = "4VDPOlbe2RSSqukaSuYniX"
 SPOTIFY_SHOW_URL = f"https://open.spotify.com/show/{SPOTIFY_SHOW_ID}"
-APPLE_PODCASTS_URL = "https://podcasts.apple.com/us/podcast/the-prospecting-show/id1488353384"
+APPLE_PODCASTS_URL = "https://podcasts.apple.com/us/podcast/id1488353384"
 YOUTUBE_URL = "https://www.youtube.com/@theprospectingshow"
 
 # Cross-linking URLs
@@ -854,7 +854,7 @@ def generate_homepage():
     "@type": "PodcastSeries",
     "name": "The Prospecting Show with Dr. Connor Robertson",
     "description": "Every week Dr. Connor Robertson interviews small business owners about their businesses. The format of the show includes past, present and future stories of how entrepreneurs have been able to successfully scale their businesses.",
-    "url": "https://drconnorrobertson.github.io/the-prospecting-show/",
+    "url": "https://drconnorrobertson.github.io/",
     "author": {{
         "@type": "Person",
         "name": "Dr. Connor Robertson",
@@ -1042,7 +1042,7 @@ def generate_episode_detail(ep):
     "partOfSeries": {{
         "@type": "PodcastSeries",
         "name": "The Prospecting Show with Dr. Connor Robertson",
-        "url": "https://drconnorrobertson.github.io/the-prospecting-show/"
+        "url": "https://drconnorrobertson.github.io/"
     }},
     "author": {{
         "@type": "Person",
@@ -1462,7 +1462,7 @@ def generate_robots():
     return f"""User-agent: *
 Allow: /
 
-Sitemap: https://drconnorrobertson.github.io/the-prospecting-show/sitemap.xml
+Sitemap: https://drconnorrobertson.github.io/sitemap.xml
 """
 
 
