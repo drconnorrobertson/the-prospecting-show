@@ -690,8 +690,8 @@ def get_initials(name):
 def nav_html(active=''):
     """Generate navigation HTML."""
     links = [
-        ('/', 'Home'), ('/episodes/', 'Episodes'), ('/about/', 'About'),
-        ('/guests/', 'Guests'), ('/blog/', 'Blog'), ('/contact/', 'Contact')
+        (f'{BASE_PATH}/', 'Home'), (f'{BASE_PATH}/episodes/', 'Episodes'), (f'{BASE_PATH}/about/', 'About'),
+        (f'{BASE_PATH}/guests/', 'Guests'), (f'{BASE_PATH}/blog/', 'Blog'), (f'{BASE_PATH}/contact/', 'Contact')
     ]
     nav_items = ''
     for href, label in links:
