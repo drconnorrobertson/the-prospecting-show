@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guests | The Prospecting Show with Dr. Connor Robertson</title>
-    <meta name="description" content="Browse the entrepreneurs, founders, and business leaders who have appeared on The Prospecting Show podcast with Dr. Connor Robertson.">
+    <title>Guest Directory | The Prospecting Show with Dr. Connor Robertson</title>
+    <meta name="description" content="Browse all 39 guests who have appeared on The Prospecting Show podcast with Dr. Connor Robertson. Entrepreneurs, founders, and business leaders sharing insights on sales, prospecting, and business growth.">
     <meta name="author" content="Dr. Connor Robertson">
     <link rel="canonical" href="https://prospectingshow.com/guests/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Guests | The Prospecting Show with Dr. Connor Robertson">
-    <meta property="og:description" content="Browse the entrepreneurs, founders, and business leaders who have appeared on The Prospecting Show podcast with Dr. Connor Robertson.">
+    <meta property="og:title" content="Guest Directory | The Prospecting Show with Dr. Connor Robertson">
+    <meta property="og:description" content="Browse all 39 guests who have appeared on The Prospecting Show podcast. Entrepreneurs, founders, and business leaders sharing insights on sales and business growth.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://prospectingshow.com/guests/">
@@ -18,17 +18,15 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Guests | The Prospecting Show with Dr. Connor Robertson">
-    <meta name="twitter:description" content="Browse the entrepreneurs, founders, and business leaders who have appeared on The Prospecting Show podcast with Dr. Connor Robertson.">
+    <meta name="twitter:title" content="Guest Directory | The Prospecting Show with Dr. Connor Robertson">
+    <meta name="twitter:description" content="Browse all 39 guests who have appeared on The Prospecting Show podcast with Dr. Connor Robertson.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
-    
-
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -40,18 +38,7 @@
   "url": "https://drconnorrobertson.com",
   "jobTitle": "Entrepreneur, Podcast Host, Business Strategist",
   "description": "Dr. Connor Robertson is a Pittsburgh-based entrepreneur, podcast host of The Prospecting Show, and business strategist helping entrepreneurs scale through sales, prospecting, and business development.",
-  "knowsAbout": [
-    "Sales",
-    "Prospecting",
-    "B2B Sales",
-    "Business Development",
-    "Entrepreneurship",
-    "Lead Generation",
-    "Cold Outreach",
-    "Podcasting",
-    "Digital Marketing",
-    "Pittsburgh Business"
-  ],
+  "knowsAbout": ["Sales","Prospecting","B2B Sales","Business Development","Entrepreneurship","Lead Generation","Cold Outreach","Podcasting","Digital Marketing","Pittsburgh Business"],
   "sameAs": [
     "https://drconnorrobertson.com",
     "https://elixirconsultinggroup.com",
@@ -66,23 +53,10 @@
     "https://x.com/drconnorre",
     "https://youtube.com/@connorrobertsonacquisitions"
   ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Pittsburgh",
-    "addressRegion": "PA",
-    "addressCountry": "US"
-  },
+  "address": {"@type": "PostalAddress","addressLocality": "Pittsburgh","addressRegion": "PA","addressCountry": "US"},
   "worksFor": [
-    {
-      "@type": "Organization",
-      "name": "The Prospecting Show",
-      "url": "https://prospectingshow.com"
-    },
-    {
-      "@type": "Organization",
-      "name": "Elixir Consulting Group",
-      "url": "https://elixirconsultinggroup.com"
-    }
+    {"@type": "Organization","name": "The Prospecting Show","url": "https://prospectingshow.com"},
+    {"@type": "Organization","name": "Elixir Consulting Group","url": "https://elixirconsultinggroup.com"}
   ]
 }
 </script>
@@ -106,6 +80,37 @@
   ]
 }
 </script>
+<style>
+.guest-search {
+    width: 100%; max-width: 500px; margin: 0 auto 24px; display: block;
+    padding: 14px 20px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--bg-card); color: var(--text-primary); font-size: 1rem;
+    font-family: inherit; outline: none; transition: border-color 0.3s;
+}
+.guest-search:focus { border-color: var(--accent); }
+.guest-search::placeholder { color: var(--text-muted); }
+.topic-filters {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 32px;
+}
+.topic-filter {
+    padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--bg-card); color: var(--text-secondary); font-size: 0.8rem;
+    cursor: pointer; transition: all 0.3s; font-family: inherit;
+}
+.topic-filter:hover, .topic-filter.active {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+}
+.guest-card-link {
+    text-decoration: none; color: inherit; display: block;
+}
+.guest-card-link:hover .guest-card {
+    border-color: var(--accent); transform: translateY(-3px);
+}
+.no-results {
+    text-align: center; color: var(--text-muted); padding: 40px; font-size: 1.1rem;
+    display: none;
+}
+</style>
 </head>
 <body>
 <nav class="nav">
@@ -113,7 +118,7 @@
         <a href="/" class="nav-brand">
             <span>The Prospecting Show</span>
         </a>
-        <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/episodes/">Episodes</a></li><li><a href="/about/">About</a></li><li><a href="/guests/" class="active">Guests</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li></ul>
+        <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/episodes/">Episodes</a></li><li><a href="/about/">About</a></li><li><a href="/host/">Host</a></li><li><a href="/guests/" class="active">Guests</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li></ul>
         <a href="/subscribe/" class="nav-cta">Subscribe</a>
         <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
     </div>
@@ -121,282 +126,412 @@
 
 <section class="section" style="padding-top:120px;">
     <div class="container">
-        <h1 class="section-title">Our Guests</h1>
-        <p class="section-subtitle">The Prospecting Show has featured 39+ entrepreneurs, founders, and business leaders. Here are some of our featured guests.</p>
-        <div class="guests-grid">
-        <div class="guest-card">
-            <div class="guest-avatar">LL</div>
-            <h3>Lisa Laporte</h3>
-            <p class="company">TWiT.tv</p>
-            <a href="https://www.twit.tv" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/how-to-grow-your-business-using-podcast-advertising-with-lisa-laporte/" class="ep-link">Episode 178</a>
+        <h1 class="section-title">Guest Directory</h1>
+        <p class="section-subtitle">The Prospecting Show has featured 39 entrepreneurs, founders, and business leaders. Search by name or filter by topic to find your favorite guests. Each guest was interviewed by Dr. Connor Robertson.</p>
+
+        <input type="text" class="guest-search" placeholder="Search guests by name or topic..." id="guestSearch" autocomplete="off">
+
+        <div class="topic-filters" id="topicFilters">
+            <button class="topic-filter active" data-filter="all">All</button><button class="topic-filter" data-filter="ai writing">AI Writing</button><button class="topic-filter" data-filter="agency growth">Agency Growth</button><button class="topic-filter" data-filter="arbitrage">Arbitrage</button><button class="topic-filter" data-filter="automation">Automation</button><button class="topic-filter" data-filter="automotive">Automotive</button><button class="topic-filter" data-filter="brand scaling">Brand Scaling</button><button class="topic-filter" data-filter="burnout">Burnout</button><button class="topic-filter" data-filter="business building">Business Building</button><button class="topic-filter" data-filter="business growth">Business Growth</button><button class="topic-filter" data-filter="business ownership">Business Ownership</button><button class="topic-filter" data-filter="business scaling">Business Scaling</button><button class="topic-filter" data-filter="business strategy">Business Strategy</button><button class="topic-filter" data-filter="crm">CRM</button><button class="topic-filter" data-filter="career growth">Career Growth</button><button class="topic-filter" data-filter="career transition">Career Transition</button><button class="topic-filter" data-filter="coaching">Coaching</button><button class="topic-filter" data-filter="communication">Communication</button><button class="topic-filter" data-filter="compliance">Compliance</button><button class="topic-filter" data-filter="consulting">Consulting</button><button class="topic-filter" data-filter="content marketing">Content Marketing</button><button class="topic-filter" data-filter="continuous learning">Continuous Learning</button><button class="topic-filter" data-filter="copywriting">Copywriting</button><button class="topic-filter" data-filter="cost optimization">Cost Optimization</button><button class="topic-filter" data-filter="dental industry">Dental Industry</button><button class="topic-filter" data-filter="digital marketing">Digital Marketing</button><button class="topic-filter" data-filter="digital tools">Digital Tools</button><button class="topic-filter" data-filter="education">Education</button><button class="topic-filter" data-filter="email tracking">Email Tracking</button><button class="topic-filter" data-filter="entity structure">Entity Structure</button><button class="topic-filter" data-filter="entrepreneurship">Entrepreneurship</button><button class="topic-filter" data-filter="executive coaching">Executive Coaching</button><button class="topic-filter" data-filter="exit strategy">Exit Strategy</button><button class="topic-filter" data-filter="franchising">Franchising</button><button class="topic-filter" data-filter="funnels">Funnels</button><button class="topic-filter" data-filter="go high level">Go High Level</button><button class="topic-filter" data-filter="growth">Growth</button><button class="topic-filter" data-filter="healthcare">Healthcare</button><button class="topic-filter" data-filter="healthcare tech">Healthcare Tech</button><button class="topic-filter" data-filter="healthcare to sales">Healthcare to Sales</button><button class="topic-filter" data-filter="high ticket sales">High Ticket Sales</button><button class="topic-filter" data-filter="insurance">Insurance</button><button class="topic-filter" data-filter="insurance marketing">Insurance Marketing</button><button class="topic-filter" data-filter="investing">Investing</button><button class="topic-filter" data-filter="lead conversion">Lead Conversion</button><button class="topic-filter" data-filter="lead generation">Lead Generation</button><button class="topic-filter" data-filter="leadership">Leadership</button><button class="topic-filter" data-filter="life coaching">Life Coaching</button><button class="topic-filter" data-filter="linkedin">LinkedIn</button><button class="topic-filter" data-filter="mvp">MVP</button><button class="topic-filter" data-filter="marketing automation">Marketing Automation</button><button class="topic-filter" data-filter="marketplace">Marketplace</button><button class="topic-filter" data-filter="media buying">Media Buying</button><button class="topic-filter" data-filter="mentorship">Mentorship</button><button class="topic-filter" data-filter="mindset">Mindset</button><button class="topic-filter" data-filter="networking">Networking</button><button class="topic-filter" data-filter="niche business">Niche Business</button><button class="topic-filter" data-filter="offshore staffing">Offshore Staffing</button><button class="topic-filter" data-filter="online presence">Online Presence</button><button class="topic-filter" data-filter="organic marketing">Organic Marketing</button><button class="topic-filter" data-filter="organic traffic">Organic Traffic</button><button class="topic-filter" data-filter="organizational management">Organizational Management</button><button class="topic-filter" data-filter="outbound sales">Outbound Sales</button><button class="topic-filter" data-filter="outsourcing">Outsourcing</button><button class="topic-filter" data-filter="pr">PR</button><button class="topic-filter" data-filter="paid marketing">Paid Marketing</button><button class="topic-filter" data-filter="pay per lead">Pay Per Lead</button><button class="topic-filter" data-filter="podcast advertising">Podcast Advertising</button><button class="topic-filter" data-filter="podcast booking">Podcast Booking</button><button class="topic-filter" data-filter="premium pricing">Premium Pricing</button><button class="topic-filter" data-filter="product development">Product Development</button><button class="topic-filter" data-filter="property services">Property Services</button><button class="topic-filter" data-filter="purpose">Purpose</button><button class="topic-filter" data-filter="real estate">Real Estate</button><button class="topic-filter" data-filter="recruiting">Recruiting</button><button class="topic-filter" data-filter="referrals">Referrals</button><button class="topic-filter" data-filter="seo">SEO</button><button class="topic-filter" data-filter="sops">SOPs</button><button class="topic-filter" data-filter="saas">SaaS</button><button class="topic-filter" data-filter="salary negotiation">Salary Negotiation</button><button class="topic-filter" data-filter="sales">Sales</button><button class="topic-filter" data-filter="sales enablement">Sales Enablement</button><button class="topic-filter" data-filter="sales skills">Sales Skills</button><button class="topic-filter" data-filter="sales strategy">Sales Strategy</button><button class="topic-filter" data-filter="sales tech">Sales Tech</button><button class="topic-filter" data-filter="small business">Small Business</button><button class="topic-filter" data-filter="stage selling">Stage Selling</button><button class="topic-filter" data-filter="systems">Systems</button><button class="topic-filter" data-filter="tax">Tax</button><button class="topic-filter" data-filter="tax optimization">Tax Optimization</button><button class="topic-filter" data-filter="tech startups">Tech Startups</button><button class="topic-filter" data-filter="thought leadership">Thought Leadership</button><button class="topic-filter" data-filter="vehicle valuation">Vehicle Valuation</button><button class="topic-filter" data-filter="virtual teams">Virtual Teams</button><button class="topic-filter" data-filter="wealth building">Wealth Building</button>
         </div>
-        <div class="guest-card">
-            <div class="guest-avatar">IM</div>
-            <h3>Ingrid Murra</h3>
-            <p class="company">Two Front</p>
-            <a href="https://www.mytwofront.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/orthodontics-meets-saas-with-ingrid-murra/" class="ep-link">Episode 177</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JH</div>
-            <h3>Jeremy Herskovic</h3>
-            <p class="company">CalCPA Group</p>
-            <a href="https://calcpagroup.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/optimizing-your-small-business-tax-with-jeremy-herskovic/" class="ep-link">Episode 176</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">SS</div>
-            <h3>Sharjil Salim</h3>
-            <p class="company">Souqh</p>
-            <a href="https://souqh.ca" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/souqhca-real-estate-marketplace-with-sharjil-salim/" class="ep-link">Episode 175</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">KG</div>
-            <h3>Kelly Gordon</h3>
-            <p class="company">Entrepreneur</p>
-            <a href="https://www.linkedin.com/in/kellybryn/" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/insurance-pay-per-lead-with-kelly-gordon/" class="ep-link">Episode 174</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">QO</div>
-            <h3>Quinn Osha</h3>
-            <p class="company">Topmarq</p>
-            <a href="https://topmarq.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/getting-the-most-for-your-car-with-quinn-osha/" class="ep-link">Episode 173</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">PL</div>
-            <h3>Pieter Limburg</h3>
-            <p class="company">Mobilo Card</p>
-            <a href="https://www.mobilocard.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/digital-business-cards-with-pieter-limburg/" class="ep-link">Episode 172</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">EW</div>
-            <h3>Eli Wilde</h3>
-            <p class="company">Wilde Influence</p>
-            <a href="https://www.wildeinfluence.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/sales-communication-and-scaling-with-eli-wilde/" class="ep-link">Episode 171</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JS</div>
-            <h3>Joel Stevenson</h3>
-            <p class="company">Yesware</p>
-            <a href="https://www.yesware.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/sales-enablement-with-yesware-joel-stevenson/" class="ep-link">Episode 170</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">RL</div>
-            <h3>Rich LeBrun</h3>
-            <p class="company">Entrepreneur</p>
-            <a href="https://www.linkedin.com/in/richlebrun/" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/finding-your-perfect-franchise-with-rich-lebrun/" class="ep-link">Episode 169</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">PV</div>
-            <h3>Peter Velardi</h3>
-            <p class="company">ReferMeIQ</p>
-            <a href="https://www.refermeiq.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/scaling-your-referrals-with-peter-velardi-and-refermeiq/" class="ep-link">Episode 168</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">MT</div>
-            <h3>Market Muse Team</h3>
-            <p class="company">Market Muse</p>
-            <a href="https://www.marketmuse.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/seo-content-built-fast-with-market-muse/" class="ep-link">Episode 167</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">ST</div>
-            <h3>Sandoval Tax Team</h3>
-            <p class="company">Sandoval Tax</p>
-            <a href="https://www.sandovaltax.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/get-your-tax-right-with-sandoval-tax/" class="ep-link">Episode 166</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">TM</div>
-            <h3>Tim Madden</h3>
-            <p class="company">Executive Upgrades</p>
-            <a href="https://www.execupgrades.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/upgrade-your-career-with-tim-madden/" class="ep-link">Episode 165</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">RM</div>
-            <h3>Ron Medlin</h3>
-            <p class="company">Entrepreneur</p>
+
+        <div class="guests-grid" id="guestsGrid">
             
-            <a href="/episodes/getting-your-systems-straight-with-ron-medlin/" class="ep-link">Episode 164</a>
+        <a href="/guests/ravi-abuvala/" class="guest-card-link" data-name="ravi abuvala" data-topics="systems virtual teams business scaling">
+            <div class="guest-card">
+                <div class="guest-avatar">RA</div>
+                <h3>Ravi Abuvala</h3>
+                <p class="company">Scaling Using Systems with Ravi Abuvala</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Systems</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Virtual Teams</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Scaling</span></div>
+                <span class="ep-link">Episode 32</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Feb 2020</span>
+            </div>
+        </a>
+        <a href="/guests/franbeau-beduya/" class="guest-card-link" data-name="franbeau beduya" data-topics="sops agency growth systems">
+            <div class="guest-card">
+                <div class="guest-avatar">FB</div>
+                <h3>Franbeau Beduya</h3>
+                <p class="company">Scaling an Agency through SOPs with Franbeau Beduya</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">SOPs</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Agency Growth</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Systems</span></div>
+                <span class="ep-link">Episode 116</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">May 2021</span>
+            </div>
+        </a>
+        <a href="/guests/dr-mike-carberry/" class="guest-card-link" data-name="dr. mike carberry" data-topics="healthcare entrepreneurship mindset">
+            <div class="guest-card">
+                <div class="guest-avatar">MC</div>
+                <h3>Dr. Mike Carberry</h3>
+                <p class="company">Entrepreneurial Insights with Dr. Mike Carberry</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Healthcare</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entrepreneurship</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Mindset</span></div>
+                <span class="ep-link">Episode 75</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Sep 2020</span>
+            </div>
+        </a>
+        <a href="/guests/justin-connor/" class="guest-card-link" data-name="justin connor" data-topics="insurance marketing niche business lead generation">
+            <div class="guest-card">
+                <div class="guest-avatar">JC</div>
+                <h3>Justin Connor</h3>
+                <p class="company">Building an Insurance Marketing Company with Justin Connor</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Insurance Marketing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Niche Business</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Lead Generation</span></div>
+                <span class="ep-link">Episode 98</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jan 2021</span>
+            </div>
+        </a>
+        <a href="/guests/ryan-estes/" class="guest-card-link" data-name="ryan estes" data-topics="podcast booking thought leadership pr">
+            <div class="guest-card">
+                <div class="guest-avatar">RE</div>
+                <h3>Ryan Estes</h3>
+                <p class="company">The Team that Grew The Prospecting Show with Ryan Estes of Kitcaster</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Podcast Booking</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Thought Leadership</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">PR</span></div>
+                <span class="ep-link">Episode 162</span>
+                
+            </div>
+        </a>
+        <a href="/guests/mark-firth/" class="guest-card-link" data-name="mark firth" data-topics="consulting paid marketing funnels">
+            <div class="guest-card">
+                <div class="guest-avatar">MF</div>
+                <h3>Mark Firth</h3>
+                <p class="company">Growing Your Consulting Business with Mark Firth</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Consulting</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Paid Marketing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Funnels</span></div>
+                <span class="ep-link">Episode 156</span>
+                
+            </div>
+        </a>
+        <a href="/guests/spencer-gatten/" class="guest-card-link" data-name="spencer gatten" data-topics="real estate investing wealth building">
+            <div class="guest-card">
+                <div class="guest-avatar">SG</div>
+                <h3>Spencer Gatten</h3>
+                <p class="company">Real Estate Investing with Spencer Gatten</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Real Estate</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Investing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Wealth Building</span></div>
+                <span class="ep-link">Episode 54</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">May 2020</span>
+            </div>
+        </a>
+        <a href="/guests/kelly-gordon/" class="guest-card-link" data-name="kelly gordon" data-topics="insurance lead generation pay per lead">
+            <div class="guest-card">
+                <div class="guest-avatar">KG</div>
+                <h3>Kelly Gordon</h3>
+                <p class="company">Insurance Pay Per Lead with Kelly Gordon</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Insurance</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Lead Generation</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Pay Per Lead</span></div>
+                <span class="ep-link">Episode 174</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jan 2021</span>
+            </div>
+        </a>
+        <a href="/guests/jeremy-herskovic/" class="guest-card-link" data-name="jeremy herskovic" data-topics="tax optimization small business entity structure">
+            <div class="guest-card">
+                <div class="guest-avatar">JH</div>
+                <h3>Jeremy Herskovic</h3>
+                <p class="company">Optimizing Your Small Business Tax with Jeremy Herskovic</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Tax Optimization</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Small Business</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entity Structure</span></div>
+                <span class="ep-link">Episode 176</span>
+                
+            </div>
+        </a>
+        <a href="/guests/rj-huebert/" class="guest-card-link" data-name="rj huebert" data-topics="digital marketing online presence lead generation">
+            <div class="guest-card">
+                <div class="guest-avatar">RH</div>
+                <h3>RJ Huebert</h3>
+                <p class="company">Digital Marketing with RJ Huebert</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Digital Marketing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Online Presence</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Lead Generation</span></div>
+                <span class="ep-link">Episode 28</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jan 2020</span>
+            </div>
+        </a>
+        <a href="/guests/andrew-kroeze/" class="guest-card-link" data-name="andrew kroeze" data-topics="exit strategy business scaling coaching">
+            <div class="guest-card">
+                <div class="guest-avatar">AK</div>
+                <h3>Andrew Kroeze</h3>
+                <p class="company">Creating, Building, Scaling and Selling a Company with Andrew Kroeze</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Exit Strategy</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Scaling</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Coaching</span></div>
+                <span class="ep-link">Episode 160</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Feb 2020</span>
+            </div>
+        </a>
+        <a href="/guests/lisa-laporte/" class="guest-card-link" data-name="lisa laporte" data-topics="podcast advertising brand scaling media buying">
+            <div class="guest-card">
+                <div class="guest-avatar">LL</div>
+                <h3>Lisa Laporte</h3>
+                <p class="company">How to Grow Your Business Using Podcast Advertising with Lisa Laporte</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Podcast Advertising</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Brand Scaling</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Media Buying</span></div>
+                <span class="ep-link">Episode 178</span>
+                
+            </div>
+        </a>
+        <a href="/guests/rich-lebrun/" class="guest-card-link" data-name="rich lebrun" data-topics="franchising business ownership entrepreneurship">
+            <div class="guest-card">
+                <div class="guest-avatar">RL</div>
+                <h3>Rich LeBrun</h3>
+                <p class="company">Finding Your Perfect Franchise with Rich LeBrun</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Franchising</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Ownership</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entrepreneurship</span></div>
+                <span class="ep-link">Episode 169</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Sep 2020</span>
+            </div>
+        </a>
+        <a href="/guests/dr-terri-levine/" class="guest-card-link" data-name="dr. terri levine" data-topics="mentorship coaching business growth">
+            <div class="guest-card">
+                <div class="guest-avatar">TL</div>
+                <h3>Dr. Terri Levine</h3>
+                <p class="company">Why You Need a Mentor with Dr. Terri Levine</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Mentorship</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Coaching</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Growth</span></div>
+                <span class="ep-link">Episode 155</span>
+                
+            </div>
+        </a>
+        <a href="/guests/pieter-limburg/" class="guest-card-link" data-name="pieter limburg" data-topics="networking digital tools sales tech">
+            <div class="guest-card">
+                <div class="guest-avatar">PL</div>
+                <h3>Pieter Limburg</h3>
+                <p class="company">Digital Business Cards with Pieter Limburg</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Networking</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Digital Tools</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Sales Tech</span></div>
+                <span class="ep-link">Episode 172</span>
+                
+            </div>
+        </a>
+        <a href="/guests/tim-madden/" class="guest-card-link" data-name="tim madden" data-topics="career growth linkedin salary negotiation">
+            <div class="guest-card">
+                <div class="guest-avatar">TM</div>
+                <h3>Tim Madden</h3>
+                <p class="company">Upgrade Your Career with Tim Madden</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Career Growth</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">LinkedIn</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Salary Negotiation</span></div>
+                <span class="ep-link">Episode 165</span>
+                
+            </div>
+        </a>
+        <a href="/guests/victoria-mattingly/" class="guest-card-link" data-name="victoria mattingly" data-topics="entrepreneurship business building growth">
+            <div class="guest-card">
+                <div class="guest-avatar">VM</div>
+                <h3>Victoria Mattingly</h3>
+                <p class="company">Entrepreneurial Highlight with Victoria Mattingly</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entrepreneurship</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Building</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Growth</span></div>
+                <span class="ep-link">Episode 62</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jul 2020</span>
+            </div>
+        </a>
+        <a href="/guests/ron-medlin/" class="guest-card-link" data-name="ron medlin" data-topics="marketing automation go high level systems">
+            <div class="guest-card">
+                <div class="guest-avatar">RM</div>
+                <h3>Ron Medlin</h3>
+                <p class="company">Getting Your Systems Straight with Ron Medlin</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Marketing Automation</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Go High Level</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Systems</span></div>
+                <span class="ep-link">Episode 164</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">May 2021</span>
+            </div>
+        </a>
+        <a href="/guests/salik-muhammed/" class="guest-card-link" data-name="salik muhammed" data-topics="seo organic traffic digital marketing">
+            <div class="guest-card">
+                <div class="guest-avatar">SM</div>
+                <h3>Salik Muhammed</h3>
+                <p class="company">Scaling SEO with Salik Muhammed</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">SEO</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Organic Traffic</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Digital Marketing</span></div>
+                <span class="ep-link">Episode 100</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jan 2021</span>
+            </div>
+        </a>
+        <a href="/guests/ingrid-murra/" class="guest-card-link" data-name="ingrid murra" data-topics="saas healthcare tech dental industry">
+            <div class="guest-card">
+                <div class="guest-avatar">IM</div>
+                <h3>Ingrid Murra</h3>
+                <p class="company">Orthodontics Meets SAAS with Ingrid Murra</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">SaaS</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Healthcare Tech</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Dental Industry</span></div>
+                <span class="ep-link">Episode 177</span>
+                
+            </div>
+        </a>
+        <a href="/guests/ben-nader/" class="guest-card-link" data-name="ben nader" data-topics="recruiting coaching organic marketing">
+            <div class="guest-card">
+                <div class="guest-avatar">BN</div>
+                <h3>Ben Nader</h3>
+                <p class="company">From Recruiter to Coach with Ben Nader</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Recruiting</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Coaching</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Organic Marketing</span></div>
+                <span class="ep-link">Episode 161</span>
+                
+            </div>
+        </a>
+        <a href="/guests/demetri-nikoloulis/" class="guest-card-link" data-name="demetri nikoloulis" data-topics="career transition healthcare to sales sales skills">
+            <div class="guest-card">
+                <div class="guest-avatar">DN</div>
+                <h3>Demetri Nikoloulis</h3>
+                <p class="company">Transitioning from Clinical to Sales with Demetri Nikoloulis, DPT</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Career Transition</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Healthcare to Sales</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Sales Skills</span></div>
+                <span class="ep-link">Episode 6</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Nov 2019</span>
+            </div>
+        </a>
+        <a href="/guests/justin-oglesby/" class="guest-card-link" data-name="justin oglesby" data-topics="lead conversion outsourcing cost optimization">
+            <div class="guest-card">
+                <div class="guest-avatar">JO</div>
+                <h3>Justin Oglesby</h3>
+                <p class="company">Converting Leads With Low Cost Labor with Justin Oglesby</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Lead Conversion</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Outsourcing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Cost Optimization</span></div>
+                <span class="ep-link">Episode 120</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jun 2021</span>
+            </div>
+        </a>
+        <a href="/guests/kelsey-oneal/" class="guest-card-link" data-name="kelsey oneal" data-topics="high ticket sales premium pricing sales strategy">
+            <div class="guest-card">
+                <div class="guest-avatar">KO</div>
+                <h3>Kelsey Oneal</h3>
+                <p class="company">High Ticket Sales with Kelsey Oneal</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">High Ticket Sales</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Premium Pricing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Sales Strategy</span></div>
+                <span class="ep-link">Episode 93</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Dec 2020</span>
+            </div>
+        </a>
+        <a href="/guests/quinn-osha/" class="guest-card-link" data-name="quinn osha" data-topics="automotive vehicle valuation marketplace">
+            <div class="guest-card">
+                <div class="guest-avatar">QO</div>
+                <h3>Quinn Osha</h3>
+                <p class="company">Getting the Most for Your Car with Quinn Osha</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Automotive</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Vehicle Valuation</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Marketplace</span></div>
+                <span class="ep-link">Episode 173</span>
+                
+            </div>
+        </a>
+        <a href="/guests/jordan-ellis-shamauri-phillip/" class="guest-card-link" data-name="jordan ellis &amp; shamauri phillip" data-topics="education continuous learning entrepreneurship">
+            <div class="guest-card">
+                <div class="guest-avatar">JP</div>
+                <h3>Jordan Ellis &amp; Shamauri Phillip</h3>
+                <p class="company">Education, Entrepreneurship, and Why Learning Never Stops with Jordan Ellis and Shamauri Phillip</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Education</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Continuous Learning</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entrepreneurship</span></div>
+                <span class="ep-link">Episode 56</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jun 2020</span>
+            </div>
+        </a>
+        <a href="/guests/ian-reith/" class="guest-card-link" data-name="ian reith" data-topics="entrepreneurship business strategy leadership">
+            <div class="guest-card">
+                <div class="guest-avatar">IR</div>
+                <h3>Ian Reith</h3>
+                <p class="company">Entrepreneurial Highlight with Ian Reith</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Entrepreneurship</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Strategy</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Leadership</span></div>
+                <span class="ep-link">Episode 70</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Aug 2020</span>
+            </div>
+        </a>
+        <a href="/guests/sharjil-salim/" class="guest-card-link" data-name="sharjil salim" data-topics="real estate marketplace property services">
+            <div class="guest-card">
+                <div class="guest-avatar">SS</div>
+                <h3>Sharjil Salim</h3>
+                <p class="company">Souqh.ca - Real Estate Marketplace with Sharjil Salim</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Real Estate</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Marketplace</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Property Services</span></div>
+                <span class="ep-link">Episode 175</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">May 2020</span>
+            </div>
+        </a>
+        <a href="/guests/steph-shinabery/" class="guest-card-link" data-name="steph shinabery" data-topics="burnout purpose life coaching">
+            <div class="guest-card">
+                <div class="guest-avatar">SS</div>
+                <h3>Steph Shinabery</h3>
+                <p class="company">Finding Your Purpose with Steph Shinabery</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Burnout</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Purpose</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Life Coaching</span></div>
+                <span class="ep-link">Episode 157</span>
+                
+            </div>
+        </a>
+        <a href="/guests/stefan-smulders/" class="guest-card-link" data-name="stefan smulders" data-topics="linkedin automation lead generation">
+            <div class="guest-card">
+                <div class="guest-avatar">SS</div>
+                <h3>Stefan Smulders</h3>
+                <p class="company">LinkedIn 2022 with Stefan Smulders of Expandi</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">LinkedIn</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Automation</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Lead Generation</span></div>
+                <span class="ep-link">Episode 163</span>
+                
+            </div>
+        </a>
+        <a href="/guests/joel-stevenson/" class="guest-card-link" data-name="joel stevenson" data-topics="sales enablement email tracking crm">
+            <div class="guest-card">
+                <div class="guest-avatar">JS</div>
+                <h3>Joel Stevenson</h3>
+                <p class="company">Sales Enablement with YESWARE - Joel Stevenson</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Sales Enablement</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Email Tracking</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">CRM</span></div>
+                <span class="ep-link">Episode 170</span>
+                
+            </div>
+        </a>
+        <a href="/guests/james-sullivan/" class="guest-card-link" data-name="james sullivan" data-topics="tech startups mvp product development">
+            <div class="guest-card">
+                <div class="guest-avatar">JS</div>
+                <h3>James Sullivan</h3>
+                <p class="company">Building The Tech Behind Your Idea with James Sullivan</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Tech Startups</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">MVP</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Product Development</span></div>
+                <span class="ep-link">Episode 107</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Mar 2021</span>
+            </div>
+        </a>
+        <a href="/guests/sandoval-tax-team/" class="guest-card-link" data-name="sandoval tax team" data-topics="tax small business compliance">
+            <div class="guest-card">
+                <div class="guest-avatar">ST</div>
+                <h3>Sandoval Tax Team</h3>
+                <p class="company">Get Your Tax Right with Sandoval Tax</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Tax</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Small Business</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Compliance</span></div>
+                <span class="ep-link">Episode 166</span>
+                
+            </div>
+        </a>
+        <a href="/guests/market-muse-team/" class="guest-card-link" data-name="market muse team" data-topics="seo content marketing ai writing">
+            <div class="guest-card">
+                <div class="guest-avatar">MT</div>
+                <h3>Market Muse Team</h3>
+                <p class="company">SEO Content Built FAST with Market Muse</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">SEO</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Content Marketing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">AI Writing</span></div>
+                <span class="ep-link">Episode 167</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Jan 2021</span>
+            </div>
+        </a>
+        <a href="/guests/zach-thomas/" class="guest-card-link" data-name="zach thomas" data-topics="linkedin copywriting outbound sales">
+            <div class="guest-card">
+                <div class="guest-avatar">ZT</div>
+                <h3>Zach Thomas</h3>
+                <p class="company">The Perfect LinkedIn Machine with Zach Thomas</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">LinkedIn</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Copywriting</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Outbound Sales</span></div>
+                <span class="ep-link">Episode 158</span>
+                
+            </div>
+        </a>
+        <a href="/guests/tom-tonkin/" class="guest-card-link" data-name="tom tonkin" data-topics="executive coaching organizational management leadership">
+            <div class="guest-card">
+                <div class="guest-avatar">TT</div>
+                <h3>Tom Tonkin</h3>
+                <p class="company">Finding the Bottleneck with Tom Tonkin</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Executive Coaching</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Organizational Management</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Leadership</span></div>
+                <span class="ep-link">Episode 159</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Aug 2020</span>
+            </div>
+        </a>
+        <a href="/guests/brett-trembly/" class="guest-card-link" data-name="brett trembly" data-topics="offshore staffing arbitrage virtual teams">
+            <div class="guest-card">
+                <div class="guest-avatar">BT</div>
+                <h3>Brett Trembly</h3>
+                <p class="company">The Offshore Arbitrage with Brett Trembly</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Offshore Staffing</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Arbitrage</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Virtual Teams</span></div>
+                <span class="ep-link">Episode 104</span>
+                <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Feb 2021</span>
+            </div>
+        </a>
+        <a href="/guests/peter-velardi/" class="guest-card-link" data-name="peter velardi" data-topics="referrals business growth networking">
+            <div class="guest-card">
+                <div class="guest-avatar">PV</div>
+                <h3>Peter Velardi</h3>
+                <p class="company">Scaling Your Referrals with Peter Velardi and ReferMeIQ</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Referrals</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Business Growth</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Networking</span></div>
+                <span class="ep-link">Episode 168</span>
+                
+            </div>
+        </a>
+        <a href="/guests/eli-wilde/" class="guest-card-link" data-name="eli wilde" data-topics="sales communication stage selling">
+            <div class="guest-card">
+                <div class="guest-avatar">EW</div>
+                <h3>Eli Wilde</h3>
+                <p class="company">Sales, Communication and Scaling with Eli Wilde</p>
+                <div style="margin:8px 0;"><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Sales</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Communication</span><span class="topic-tag" style="font-size:0.7rem; padding:3px 8px;">Stage Selling</span></div>
+                <span class="ep-link">Episode 171</span>
+                
+            </div>
+        </a>
         </div>
-        <div class="guest-card">
-            <div class="guest-avatar">SS</div>
-            <h3>Stefan Smulders</h3>
-            <p class="company">Expandi</p>
-            <a href="https://www.expandi.io" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/linkedin-2022-with-stefan-smulders-of-expandi/" class="ep-link">Episode 163</a>
+        
+        <div class="no-results" id="noResults">
+            No guests found matching your search. Try a different term.
         </div>
-        <div class="guest-card">
-            <div class="guest-avatar">RE</div>
-            <h3>Ryan Estes</h3>
-            <p class="company">Kitcaster</p>
-            <a href="https://www.kitcaster.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/the-team-that-grew-the-prospecting-show-with-ryan-estes-of-kitcaster/" class="ep-link">Episode 162</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">BN</div>
-            <h3>Ben Nader</h3>
-            <p class="company">6 Figure Recruiter</p>
-            
-            <a href="/episodes/from-recruiter-to-coach-with-ben-nader/" class="ep-link">Episode 161</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">AK</div>
-            <h3>Andrew Kroeze</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/creating-building-scaling-and-selling-a-company-with-andrew-kroeze/" class="ep-link">Episode 160</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">TT</div>
-            <h3>Tom Tonkin</h3>
-            <p class="company">The Conservatory Group</p>
-            <a href="https://www.theconservatory.group" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/finding-the-bottleneck-with-tom-tonkin/" class="ep-link">Episode 159</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">ZT</div>
-            <h3>Zach Thomas</h3>
-            <p class="company">Compound Marketing</p>
-            
-            <a href="/episodes/the-perfect-linkedin-machine-with-zach-thomas/" class="ep-link">Episode 158</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">SS</div>
-            <h3>Steph Shinabery</h3>
-            <p class="company">Entrepreneur</p>
-            <a href="https://www.stephshinabery.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/finding-your-purpose-with-steph-shinabery/" class="ep-link">Episode 157</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">MF</div>
-            <h3>Mark Firth</h3>
-            <p class="company">Clients Impact</p>
-            <a href="https://www.clientsimpact.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/growing-your-consulting-business-with-mark-firth/" class="ep-link">Episode 156</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">DL</div>
-            <h3>Dr. Terri Levine</h3>
-            <p class="company">Heartrepreneur</p>
-            <a href="https://www.heartrepreneur.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/why-you-need-a-mentor-with-dr-terri-levine/" class="ep-link">Episode 155</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JO</div>
-            <h3>Justin Oglesby</h3>
-            <p class="company">Conversionly</p>
-            <a href="https://conversionly.io" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/converting-leads-with-low-cost-labor-with-justin-oglesby/" class="ep-link">Episode 120</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">FB</div>
-            <h3>Franbeau Beduya</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/scaling-an-agency-through-sops-with-franbeau-beduya/" class="ep-link">Episode 116</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JS</div>
-            <h3>James Sullivan</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/building-the-tech-behind-your-idea-with-james-sullivan/" class="ep-link">Episode 107</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">BT</div>
-            <h3>Brett Trembly</h3>
-            <p class="company">Get Staffed Up</p>
-            <a href="https://getstaffedup.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/the-offshore-arbitrage-with-brett-trembly/" class="ep-link">Episode 104</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">SM</div>
-            <h3>Salik Muhammed</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/scaling-seo-with-salik-muhammed/" class="ep-link">Episode 100</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JC</div>
-            <h3>Justin Connor</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/building-an-insurance-marketing-company-with-justin-connor/" class="ep-link">Episode 98</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">KO</div>
-            <h3>Kelsey Oneal</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/high-ticket-sales-with-kelsey-oneal/" class="ep-link">Episode 93</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">DC</div>
-            <h3>Dr. Mike Carberry</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/entrepreneurial-insights-with-dr-mike-carberry/" class="ep-link">Episode 75</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">IR</div>
-            <h3>Ian Reith</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/entrepreneurial-highlight-with-ian-reith/" class="ep-link">Episode 70</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">VM</div>
-            <h3>Victoria Mattingly</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/entrepreneurial-highlight-with-victoria-mattingly/" class="ep-link">Episode 62</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">JP</div>
-            <h3>Jordan Ellis & Shamauri Phillip</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/education-entrepreneurship-and-why-learning-never-stops-with-jordan-ellis-and-sh/" class="ep-link">Episode 56</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">SG</div>
-            <h3>Spencer Gatten</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/real-estate-investing-with-spencer-gatten/" class="ep-link">Episode 54</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">RA</div>
-            <h3>Ravi Abuvala</h3>
-            <p class="company">Scaling With Systems</p>
-            <a href="https://scalingwithsystems.com" target="_blank" rel="noopener" style="font-size:0.8rem; display:block; margin-bottom:6px;">Website</a>
-            <a href="/episodes/scaling-using-systems-with-ravi-abuvala/" class="ep-link">Episode 32</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">RH</div>
-            <h3>RJ Huebert</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/digital-marketing-with-rj-huebert/" class="ep-link">Episode 28</a>
-        </div>
-        <div class="guest-card">
-            <div class="guest-avatar">DN</div>
-            <h3>Demetri Nikoloulis</h3>
-            <p class="company">Entrepreneur</p>
-            
-            <a href="/episodes/transitioning-from-clinical-to-sales-with-demetri-nikoloulis-dpt/" class="ep-link">Episode 6</a>
-        </div></div>
     </div>
 </section>
 <footer class="footer">
@@ -410,7 +545,8 @@
                 <h4>Show</h4>
                 <ul>
                     <li><a href="/episodes/">All Episodes</a></li>
-                    <li><a href="/host/">Host</a></li><li><a href="/guests/">Guests</a></li>
+                    <li><a href="/host/">Host</a></li>
+                    <li><a href="/guests/">Guests</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="/blog/">Blog</a></li>
                 </ul>
@@ -440,5 +576,44 @@
     </div>
 </footer>
 <script src="/js/main.js"></script>
+<script>
+(function() {
+    const search = document.getElementById('guestSearch');
+    const grid = document.getElementById('guestsGrid');
+    const cards = grid.querySelectorAll('.guest-card-link');
+    const filters = document.querySelectorAll('.topic-filter');
+    const noResults = document.getElementById('noResults');
+    let activeFilter = 'all';
+
+    function filterCards() {
+        const q = search.value.toLowerCase().trim();
+        let visible = 0;
+        cards.forEach(card => {
+            const name = card.dataset.name;
+            const topics = card.dataset.topics;
+            const matchesSearch = !q || name.includes(q) || topics.includes(q);
+            const matchesFilter = activeFilter === 'all' || topics.includes(activeFilter);
+            if (matchesSearch && matchesFilter) {
+                card.style.display = '';
+                visible++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+
+    search.addEventListener('input', filterCards);
+
+    filters.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filters.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            activeFilter = this.dataset.filter;
+            filterCards();
+        });
+    });
+})();
+</script>
 </body>
 </html>
