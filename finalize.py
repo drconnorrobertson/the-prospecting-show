@@ -5,7 +5,7 @@ Final pass: update nav links, blog index, sitemap, robots.txt
 import os, json, re
 from datetime import datetime
 
-SITE_URL = "https://the-prospecting-show.vercel.app"
+SITE_URL = "https://prospectingshow.com"
 BASE_DIR = "/tmp/the-prospecting-show"
 
 # 1. Add "Host" link to nav on ALL existing pages

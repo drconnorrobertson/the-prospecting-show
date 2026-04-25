@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://the-prospecting-show.vercel.app/sitemap.xml
+Sitemap: https://prospectingshow.com/sitemap.xml

@@ -10,7 +10,7 @@ import re
 import json
 from datetime import datetime
 
-SITE_URL = "https://the-prospecting-show.vercel.app"
+SITE_URL = "https://prospectingshow.com"
 BASE_DIR = "/tmp/the-prospecting-show"
 
 # ─────────────────────────────────────────────

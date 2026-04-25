@@ -4,7 +4,7 @@ Creates the /host/ page and 6 new blog posts for The Prospecting Show.
 """
 import os, json
 
-SITE_URL = "https://the-prospecting-show.vercel.app"
+SITE_URL = "https://prospectingshow.com"
 BASE_DIR = "/tmp/the-prospecting-show"
 
 PERSON_SCHEMA = {
