@@ -1,0 +1,4 @@
+{
+  "buildCommand": "node scripts/buyer-intent-release.cjs .",
+  "outputDirectory": "."
+}
