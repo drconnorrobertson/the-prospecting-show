@@ -1,0 +1,7 @@
+note_id,episode_id,speaker,locator,kind,source_excerpt,draft_text,approval
+Q1,FICTIONAL-1,José,demo-source-v1 00:01,verbatim,"A comma, then
+a line.","A comma, then
+a line.",approved
+Q2,FICTIONAL-1,Jo,demo-source-v1 00:02,verbatim,We considered it.,We did it.,approved
+Q3,FICTIONAL-1,Jo,demo-source-v1 00:03,paraphrase,We considered it.,“They considered it.”,approved
+Q4,FICTIONAL-1,,,editorial_idea,,Possible follow-up,pending
