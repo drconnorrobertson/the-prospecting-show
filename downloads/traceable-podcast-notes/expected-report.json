@@ -1,0 +1,30 @@
+{
+  "records": 4,
+  "flagged_records": 3,
+  "issues": [
+    {
+      "record": 3,
+      "note_id": "Q2",
+      "issues": [
+        "verbatim_mismatch"
+      ]
+    },
+    {
+      "record": 4,
+      "note_id": "Q3",
+      "issues": [
+        "paraphrase_starts_with_quote"
+      ]
+    },
+    {
+      "record": 5,
+      "note_id": "Q4",
+      "issues": [
+        "missing_speaker",
+        "missing_locator",
+        "not_approved"
+      ]
+    }
+  ],
+  "fact_check_or_rights_clearance": false
+}
