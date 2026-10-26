@@ -1,0 +1,24 @@
+[
+  {
+    "file": "mono-one-second.wav",
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frame_rate_hz": 8000,
+    "frames": 8000,
+    "frame_bytes": 2,
+    "payload_bytes": 16000,
+    "duration_fraction": "1",
+    "duration_seconds": 1.0
+  },
+  {
+    "file": "stereo-quarter-second.wav",
+    "channels": 2,
+    "sample_width_bytes": 2,
+    "frame_rate_hz": 16000,
+    "frames": 4000,
+    "frame_bytes": 4,
+    "payload_bytes": 16000,
+    "duration_fraction": "1/4",
+    "duration_seconds": 0.25
+  }
+]
