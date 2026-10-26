@@ -1,0 +1,6 @@
+fictional_case,script_locator,authored_source,deliberate_draft_change,review_issue,teaching_resolution
+Negation,Scene-L3,We did not send the draft to customers.,We did send the draft to customers.,missing negation,Preserve not from the authored source
+Qualifier,Scene-L4,The next review is proposed for Friday.,The next review is for Friday.,omitted qualifier,Preserve proposed; not an agreed commitment
+Quantity,Scene-L5,There are fifteen sample records.,There are fifty sample records.,changed quantity,Preserve fifteen from the authored source
+Identity,Scene-L6,Unidentified speaker: Please repeat that.,Ellis: Please repeat that.,unsupported attribution,Identity remains unresolved
+Sound,Scene-L7,[Connection interruption.],[omitted],missing context,Preserve the authored interruption context

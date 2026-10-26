@@ -1,0 +1,11 @@
+ORIGINAL FICTIONAL TEACHING SCRIPT — NO RECORDING EXISTS
+These locators are script references, not audio timestamps. No actual guest, client, observed transcription run or model output.
+Scene-L1 Mara (host): Welcome to this invented editing exercise.
+Scene-L2 Ellis (guest): I will describe a draft review.
+Scene-L3 Ellis: We did not send the draft to customers.
+Scene-L4 Ellis: The next review is proposed for Friday.
+Scene-L5 Ellis: There are fifteen sample records.
+Scene-L6 Unidentified speaker: Please repeat that.
+Scene-L7 [Connection interruption.]
+Scene-L8 Mara: Please repeat the record count after the interruption.
+Scene-L9 Ellis: There are fifteen sample records.
