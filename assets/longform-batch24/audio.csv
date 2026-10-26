@@ -1,0 +1,4 @@
+fictional_sample,room,input,seconds,invented_observation,next_step
+A,Room1,Builtin,40,Fanaudibleduringpause,Trysuitableroomchange
+B,Room2,Builtin,40,Lessfanaudible,Askproduceraboutinput
+C,Room2,Approvedheadset,40,Speecheasiertofollow,Jointcheckrequested;notapproved
