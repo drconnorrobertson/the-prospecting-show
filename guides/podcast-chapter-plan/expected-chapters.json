@@ -1,0 +1,29 @@
+{
+  "duration_seconds": 2700,
+  "chapters": [
+    {
+      "chapter_id": "FICTIONAL-1",
+      "title": "Introduction and question",
+      "start_seconds": 0,
+      "start_time": "00:00:00",
+      "end_seconds": 600,
+      "duration_seconds": 600
+    },
+    {
+      "chapter_id": "FICTIONAL-2",
+      "title": "Handoff example",
+      "start_seconds": 600,
+      "start_time": "00:10:00",
+      "end_seconds": 1500,
+      "duration_seconds": 900
+    },
+    {
+      "chapter_id": "FICTIONAL-3",
+      "title": "Clarifying assumptions",
+      "start_seconds": 1500,
+      "start_time": "00:25:00",
+      "end_seconds": 2700,
+      "duration_seconds": 1200
+    }
+  ]
+}
