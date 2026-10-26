@@ -1,0 +1,5 @@
+claim_id,subject,source_type,statement,status,next_question
+C01,G01 fictional guest,personal biography,founder,first-party statement,confirm public name and pronunciation
+C02,G01 fictional guest,company announcement,advisory role,needs current confirmation,what responsibilities are current?
+C03,G01 fictional guest,older event profile,chief executive,historical source,avoid using as current title without evidence
+C04,G01 fictional guest,personal biography,more than 200 projects,reported metric; population unclear,what is counted and over which period?
