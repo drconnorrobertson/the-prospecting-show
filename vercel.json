@@ -1,4 +1,4 @@
 {
-  "buildCommand": "node scripts/buyer-intent-release.cjs .",
+  "buildCommand": "node scripts/buyer-intent-release.cjs . && python3 scripts/apply-discovery.py && python3 scripts/verify-indexing.py",
   "outputDirectory": "."
 }

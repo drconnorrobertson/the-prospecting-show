@@ -18,7 +18,7 @@ errors=[];wordcounts=[];hashes=set()
 for p in pages:
  s=p.read_text();parser=Page();parser.feed(s)
  if parser.h1!=1:errors.append(f'{p}: H1 count')
- url='https://prospectingshow.com/'+str(p.relative_to(ROOT).parent)+'/'
+ url='https://www.prospectingshow.com/'+str(p.relative_to(ROOT).parent)+'/'
  if parser.canonical!=[url]:errors.append(f'{p}: canonical')
  if re.search(r'real estate|realtor|rental propert|mortgage|property invest',s,re.I):errors.append(f'{p}: excluded subject')
  for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',s,re.S):json.loads(block)

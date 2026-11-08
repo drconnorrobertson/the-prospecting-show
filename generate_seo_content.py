@@ -145,12 +145,12 @@ def generate_topic_page(topic_key, topic_data, all_episodes):
     <title>TOPIC_TITLE | The Prospecting Show with Dr. Connor Robertson</title>
     <meta name="description" content="Explore episodes about TOPIC_TITLE_LOWER on The Prospecting Show. Learn strategies and insights from successful entrepreneurs.">
     <meta name="author" content="Dr. Connor Robertson">
-    <link rel="canonical" href="https://prospectingshow.com/topics/TOPIC_KEY/">
+    <link rel="canonical" href="https://www.prospectingshow.com/topics/TOPIC_KEY/">
     <meta property="og:title" content="TOPIC_TITLE | The Prospecting Show">
     <meta property="og:description" content="Explore episodes about TOPIC_TITLE_LOWER on The Prospecting Show. Learn strategies and insights from successful entrepreneurs.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://prospectingshow.com/topics/TOPIC_KEY/">
+    <meta property="og:url" content="https://www.prospectingshow.com/topics/TOPIC_KEY/">
     <meta property="og:site_name" content="The Prospecting Show">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TOPIC_TITLE | The Prospecting Show">
@@ -164,8 +164,8 @@ def generate_topic_page(topic_key, topic_data, all_episodes):
     "@type": "CollectionPage",
     "name": "TOPIC_TITLE",
     "description": "SCHEMA_INTRO...",
-    "url": "https://prospectingshow.com/topics/TOPIC_KEY/",
-    "isPartOf": {"@id": "https://prospectingshow.com/#podcast"}
+    "url": "https://www.prospectingshow.com/topics/TOPIC_KEY/",
+    "isPartOf": {"@id": "https://www.prospectingshow.com/#podcast"}
 }
 </script>
 <script type="application/ld+json">
@@ -173,9 +173,9 @@ def generate_topic_page(topic_key, topic_data, all_episodes):
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://prospectingshow.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Topics", "item": "https://prospectingshow.com/topics/"},
-    {"@type": "ListItem", "position": 3, "name": "TOPIC_TITLE", "item": "https://prospectingshow.com/topics/TOPIC_KEY/"}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.prospectingshow.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Topics", "item": "https://www.prospectingshow.com/topics/"},
+    {"@type": "ListItem", "position": 3, "name": "TOPIC_TITLE", "item": "https://www.prospectingshow.com/topics/TOPIC_KEY/"}
   ]
 }
 </script>
@@ -266,7 +266,7 @@ def update_sitemap(repo_path):
         content = f.read()
     soup = BeautifulSoup(content, 'xml')
     for topic_key in TOPIC_CLUSTERS.keys():
-        topic_url = f'https://prospectingshow.com/topics/{topic_key}/'
+        topic_url = f'https://www.prospectingshow.com/topics/{topic_key}/'
         url_element = soup.find('loc', string=topic_url)
         if not url_element:
             new_url = soup.new_tag('url')

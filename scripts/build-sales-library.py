@@ -3,7 +3,7 @@
 from pathlib import Path
 import csv,html,json,re,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
-BASE='https://prospectingshow.com'
+BASE='https://www.prospectingshow.com'
 PERSON='https://www.drconnorrobertson.com/#person'
 PREFIX='/blog/sales-playbooks/'
 DATE='2026-10-12'

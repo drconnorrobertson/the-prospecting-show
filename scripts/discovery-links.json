@@ -1,0 +1,58 @@
+[
+  {
+    "file": "episodes/index.html",
+    "id": "browse-interview-topics",
+    "heading": "Browse the interview archive by topic",
+    "description": "Use these existing topic collections to find related interviews in the archive.",
+    "links": [
+      {
+        "path": "/topics/ai-in-sales/",
+        "label": "AI & Technology in Sales"
+      },
+      {
+        "path": "/topics/business-acquisitions/",
+        "label": "Business Acquisitions & Scaling Through M&A"
+      },
+      {
+        "path": "/topics/cold-outreach/",
+        "label": "Cold Outreach & Prospecting"
+      },
+      {
+        "path": "/topics/entrepreneurship/",
+        "label": "Entrepreneurship & Business Building"
+      },
+      {
+        "path": "/topics/mindset/",
+        "label": "Mindset & Personal Development"
+      },
+      {
+        "path": "/topics/networking/",
+        "label": "Networking & Relationship Building"
+      },
+      {
+        "path": "/topics/real-estate-investing/",
+        "label": "Real Estate Investing & Property"
+      },
+      {
+        "path": "/topics/sales-pipeline/",
+        "label": "Sales Pipeline & Lead Management"
+      }
+    ]
+  },
+  {
+    "file": "blog/index.html",
+    "id": "more-sales-archive",
+    "heading": "More from the sales article archive",
+    "description": "Read these earlier articles alongside the learning library. Publication dates remain visible on each article.",
+    "links": [
+      {
+        "path": "/blog/best-cold-calling-scripts-that-book-meetings/",
+        "label": "Best Cold Calling Scripts That Actually Book Meetings in 2026"
+      },
+      {
+        "path": "/blog/closing-q2-strong-five-moves-top-performers/",
+        "label": "Closing Q2 Strong: The 5 Moves Top Performers Make in the Final Stretch"
+      }
+    ]
+  }
+]
