@@ -1,0 +1,5 @@
+fictional_job,planned_start_local,actual_start_local,status_at_observation,observation_local,actual_start_deviation_minutes,open_overdue_minutes
+Practice Job A,08:00,08:10,started,10:00,10,
+Practice Job B,08:30,,confirmed_not_started,10:00,,90
+Practice Job C,09:00,08:55,started,10:00,-5,
+Practice Job D,09:30,,unknown,10:00,,

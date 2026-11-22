@@ -33,5 +33,12 @@
     "body_file": "content/reviewed-guides/professional-coaching-list.inc",
     "modified": "2026-11-22",
     "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/manufacturing-software/ideal-customer-profile/": {
+    "title": "Manufacturing software ideal customer profile: workflow and data fit",
+    "description": "Identify manufacturing-software customer fit with workflow evidence, delivery gates, and a four-job fictional data review with downloadable CSV worksheets.",
+    "body_file": "content/reviewed-guides/manufacturing-software-ideal-customer-profile.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
   }
 }
