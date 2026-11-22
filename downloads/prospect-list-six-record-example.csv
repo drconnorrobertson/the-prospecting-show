@@ -1,0 +1,7 @@
+record_id,account_key,conversation_key,fit_evidence,role_status,source_reference,record_owner,stop_condition,disposition,retained_record_id,next_action
+R01,Practice Account A,A-program-1,Confirmed fictional fit,Confirmed,Fictional practice source A1,Rep One,None recorded,ready,R01,Review relevant next action
+R02,Practice Account A,A-program-1,Same conversation as R01,Confirmed,Fictional practice source A2,Rep One,None recorded,duplicate,R01,Preserve source history; no additional task
+R03,Practice Account B,B-program-1,Not relevant to stop handling,Not evaluated,Fictional stop request,Rep Two,Stop contact requested,suppressed,R03,Preserve stop condition; no outreach
+R04,Practice Account C,C-program-1,Working hypothesis only,Unknown,Fictional practice source C1,Rep One,None recorded,research,R04,Confirm relevant operating role
+R05,Practice Account D,D-program-1,Old unverified condition,Unverified,Fictional stale practice source D1,Rep Two,None recorded,research,R05,Verify current fit condition
+R06,Practice Account E,E-program-1,Confirmed fictional fit,Confirmed,Fictional practice source E1,Rep Two,None recorded,ready,R06,Review relevant next action
