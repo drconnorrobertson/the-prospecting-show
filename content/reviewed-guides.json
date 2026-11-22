@@ -12,5 +12,26 @@
     "body_file": "content/reviewed-guides/analytics-ideal-customer-profile.inc",
     "modified": "2026-11-22",
     "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/workflows/list-building/": {
+    "title": "Manage a prospect list: fields, review rules and worked example",
+    "description": "Manage a prospect list with evidence fields, duplicate and suppression checks, clear ownership, and a six-record fictional CSV reconciliation.",
+    "body_file": "content/reviewed-guides/prospect-list-management.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/leadership-training/list-building/": {
+    "title": "Leadership-training prospect list: sponsors, cohorts and next actions",
+    "description": "Build a leadership-training prospect list around program sponsors, manager cohorts, practice behaviors, and evidence-based next actions.",
+    "body_file": "content/reviewed-guides/leadership-training-list.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/professional-coaching/list-building/": {
+    "title": "Professional-coaching prospect list: scope, fit and follow-up",
+    "description": "Build a B2B coaching prospect list with buyer-confirmed business needs, scope boundaries, participant roles, and clear follow-up decisions.",
+    "body_file": "content/reviewed-guides/professional-coaching-list.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
   }
 }
