@@ -5,5 +5,12 @@
     "body_file": "content/reviewed-guides/cybersecurity-ideal-customer-profile.inc",
     "modified": "2026-11-22",
     "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/analytics-services/ideal-customer-profile/": {
+    "title": "Analytics ideal customer profile: measure evidence and account fit",
+    "description": "Define an analytics-services customer profile, compare four fictional accounts, and reconcile evidence completeness and fit rates with downloadable CSV worksheets.",
+    "body_file": "content/reviewed-guides/analytics-ideal-customer-profile.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
   }
 }
