@@ -1,0 +1,5 @@
+account,offer_version,problem,owner,access,delivery,known_fields,disposition,evidence_reference,review_date,next_decision
+Practice Analytics A,Fictional metric-definition workshop v1,confirmed,confirmed,confirmed,confirmed,4,fit confirmed,Fictional buyer conversation; no real account,Practice only,Buyer-requested scope discussion
+Practice Analytics B,Fictional metric-definition workshop v1,confirmed,confirmed,unknown,unknown,2,research,Fictional buyer conversation; no real account,Practice only,Confirm input authorization and delivery scope
+Practice Analytics C,Fictional metric-definition workshop v1,contradicted,confirmed,confirmed,confirmed,4,outside this offer,Fictional buyer conversation; no real account,Practice only,Close this sales path; buyer reports no definition problem
+Practice Analytics D,Fictional metric-definition workshop v1,unknown,unknown,unknown,unknown,0,research,Fictional public job advertisement; no real source,Practice only,Ask whether the workflow is relevant
