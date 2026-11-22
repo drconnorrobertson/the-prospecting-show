@@ -1,0 +1,9 @@
+{
+  "/blog/sales-playbooks/cybersecurity/ideal-customer-profile/": {
+    "title": "Cybersecurity ideal customer profile: evidence and fit worksheet",
+    "description": "Build a cybersecurity ideal customer profile with service-fit gates, three fictional account decisions, and downloadable evidence worksheets.",
+    "body_file": "content/reviewed-guides/cybersecurity-ideal-customer-profile.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  }
+}

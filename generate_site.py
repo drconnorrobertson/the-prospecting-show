@@ -1474,7 +1474,7 @@ def generate_404():
         <h1 style="font-size:6rem; font-weight:800; background:var(--gradient-1); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">404</h1>
         <h2 style="margin-bottom:16px;">Page Not Found</h2>
         <p style="color:var(--text-secondary); margin-bottom:32px;">The page you are looking for does not exist or has been moved.</p>
-        <a href="{BASE_PATH}/" class="btn-primary">Back to Home</a>
+        <a href="/" class="btn-primary">Back to Home</a>
     </div>
 </section>"""
     return page_wrap("Page Not Found | The Prospecting Show", "The page you are looking for does not exist.", body)
