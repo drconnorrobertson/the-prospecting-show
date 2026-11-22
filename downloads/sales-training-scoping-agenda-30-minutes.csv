@@ -1,0 +1,6 @@
+start_minute,end_minute,duration_minutes,owner,activity,output
+0,5,5,Buyer and provider,Confirm purpose and decision,Shared scope question
+5,12,7,Buyer,Describe current behavior and baseline evidence,Baseline example with unknowns
+12,20,8,Buyer and provider,Choose one practice behavior and observation criteria,Draft practice objective
+20,26,6,Delivery owners,Review participation format and preparation dependencies,Named dependencies and owners
+26,30,4,Buyer and provider,Agree next decision or stop,Owned next action or no-fit decision

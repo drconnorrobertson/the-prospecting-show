@@ -40,5 +40,12 @@
     "body_file": "content/reviewed-guides/manufacturing-software-ideal-customer-profile.inc",
     "modified": "2026-11-22",
     "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
+  },
+  "/blog/sales-playbooks/sales-training/meeting-agenda/": {
+    "title": "Sales training agenda: scoping and practice templates",
+    "description": "Use a 30-minute buyer scoping agenda and a 60-minute sales practice agenda, with a fictional discovery exercise and downloadable CSV templates.",
+    "body_file": "content/reviewed-guides/sales-training-agenda.inc",
+    "modified": "2026-11-22",
+    "styles": "<style>.library .table-wrap table{min-width:720px}.library h2[id]{scroll-margin-top:150px}@media print{.library .table-wrap{overflow:visible}.library .table-wrap table{min-width:0}}</style>"
   }
 }
